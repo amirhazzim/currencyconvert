@@ -1,4 +1,4 @@
-package com.example.convertcur.soap.config;
+package com.example.currencyconvert.soap.config;
 
 import javax.xml.ws.Endpoint;
 
@@ -8,16 +8,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.example.convertcur.soap.ConvertcurService;
+import com.example.currencyconvert.soap.CurrencyconvertService;
 
 @Configuration
-public class ConvertcurSoapConfig {
+public class CurrencyconvertSoapConfig {
 	@Autowired
 	private Bus bus;
 	
 	@Bean
 	public Endpoint endPoint() {
-		Endpoint endpointImpl = new EndpointImpl(bus, new ConvertcurService());
+		Endpoint endpointImpl = new EndpointImpl(bus, new CurrencyconvertService());
 		endpointImpl.publish("/service");
 		return endpointImpl;
 	}

@@ -1,12 +1,12 @@
-package com.example.convertcur.soap;
+package com.example.currencyconvert.soap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConvertcurApplication {
+public class CurrencyconvertApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConvertcurApplication.class, args);
+		SpringApplication.run(CurrencyconvertApplication.class, args);
 	}
 }
